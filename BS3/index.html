@@ -1,57 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+  <title>Flat Responsive Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Navigation -->
+    <div id="home">
+        <img src="img/desktop.png" alt="" class="banner">
+    </div>
 
+    <div class="container-fluid text-center" id="about">
+        <h1>Welcome to my Website.</h1>
+        <h3>Let me show you how to create a fantastic looking flat website using Bootstrap along with some HTML and CSS snippets.</h3>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Creating a website can be done in many ways. Many web hosting provides provide website building tools and software. This is the easiest method of building a website. Alternatively, u can use programs such as Wordpress or Dupral to create your website. It all depends on your comfort level.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/code.png" alt="">
+            </div>
+        </div>
+        <br>
+        <h3><i>"This is the best website course ever!" - J. Johnston</i></h3>
+    </div> <!--  end of container -->
 
-<!--- Image Slider -->
+    <img src="img/charts.png" alt="" class="banner">
+    <div class="container-fluid text-center" id="features">
+        <h2>Get to know our Features</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/html5.png" alt="" id="icon">
+                <h3>HTML5</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/bootstrap.png" alt="" id="icon">
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/css3.png" alt="" id="icon">
+                <h3>CSS3</h3>
+            </div>
+            <h3>Build responsive, mobile-first projects on the web with the world's most popular front-end component library. Bootstrap is an open source toolkit for developing with HTML5, CSS3 and JS.</h3>
+        </div>
+    </div> <!-- end of container-->
 
+    <img src="img/people.png" alt="" class="banner">
+    <div class="container-fluid text-center" id="portfolio">
+        <h2>Check out our Portfolio</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+               <img src="img/icons/camera.png" alt="" class="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/mic.png" alt="" class="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/phone.png" alt="" class="icon">
+            </div>
+            <div class="col-md-4 hidden-sm">
+                <img src="img/icons/calendar.png" alt="" class="icon">
+            </div>
+            <div class="col-md-4 hidden-sm">
+                <img src="img/icons/tv.png" alt="" class="icon">
+            </div>
+            <div class="col-md-4 hidden-sm">
+                <img src="img/icons/clock.png" alt="" class="icon">
+            </div>
+        </div>
+    </div> <!-- end of container -->
 
-<!--- Jumbotron -->
-
-
-<!--- Welcome Section -->
-
-
-<!--- Three Column Section -->
-
-
-<!--- Two Column Section -->
-
-
-<!--- Fixed background -->
-
-
-<!--- Emoji Section -->
-
-  
-<!--- Meet the team -->
-
-
-<!--- Cards -->
-rurufhjfhjfjh
-
-<!--- Two Column Section -->
-
-
-<!--- Connect -->
-
-
-<!--- Footer -->
-
-
+    <img src="img/social.png" alt="" class="banner">
+    <footer class="container-fluid text-center" id="connect">
+        <div class="row">
+            <h2>Connect</h2>
+            <div class="social">
+                <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div> <!--end of row -->        
+    </footer>
 </body>
 </html>
 
@@ -67,3 +134,11 @@ rurufhjfhjfjh
 
 
 
+
+
+
+
+
+<div class="col-md-12 text-center" style="padding: 2%;"> 
+    <a href="http://goo.gl/Y2rJSj" target="_blank"><button id="singlebutton" name="singlebutton" class="btn-lg btn-success">Subscribe!</button></a> 
+</div>
