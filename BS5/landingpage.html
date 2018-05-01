@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>Bootstrap-Basis-Vorlage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+    <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .jumbotron{
+        background-image: url(https://pixabay.com/get/ef37b90b21e90021d85a5840981318c3fe76e7d71db219429df8c0/railway-62849_1280.jpg);
+        text-align: center;
+      }
+
+      #zusammenfassung{
+        text-align: center;
+      }
+
+      #footer{
+        background-color: aqua;
+        text-align: center;
+      }
+
+      .card-img-top{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Navigation ein-/ausblenden</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Titel</a>
+      </div>
+
+      <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#jumbotron">Home <span class="sr-only">(aktuell)</span></a></li>
+          <li><a href="#mehrinfos">Über diese App</a></li>
+          <li><a href="#footer">App herunterladen</a></li>        
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form" role="search">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password" class="form-control" placeholder="Passwort">
+          </div>
+          <button type="submit" class="btn btn-success">Login</button>
+        </form>       
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="jumbotron" class="jumbotron">
+      <div class="container">
+        <h1>Meine tolle App!</h1>
+        <p>Dies ist warum du dir meine tolle App herunterladen musst...</p>
+        <hr>
+        <p>Möchtest du mehr über diese App erfahren? Dann trage dich doch einfach in unsere Mailingliste ein.</p>
+        <form class="form-inline">
+          <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" placeholder="Email eintragen" aria-label="Email eintragen">
+          </div> 
+          <button type="button" class="btn btn-primary">Mehr erfahren</button>
+        </form>    
+      </div>
+    </div>
+
+
+    <div id="mehrinfos" class="container">
+      <div class="row" id="zusammenfassung">
+        <h1>Darum ist diese App so toll</h1>
+        <p class="lead">Zusammenfassung der tollen Feattures</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img class="card-img-top" src="vorschau.jpg" alt="Hand die ein Handy hält">
+          <div class="caption">
+            <h3>Mehr Info's zur App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img class="card-img-top" src="vorschau.jpg" alt="Hand die ein Handy hält">
+          <div class="caption">
+            <h3>Mehr Info's zur App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img class="card-img-top" src="vorschau.jpg" alt="Hand die ein Handy hält">
+          <div class="caption">
+            <h3>Mehr Info's zur App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="container">
+      <div class="row">
+        <h2>Lade die App herunter</h2>
+          <p><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/320px-Download_on_the_App_Store_Badge.svg.png" alt=""></a></p>
+      </div>
+    </div>
+
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
