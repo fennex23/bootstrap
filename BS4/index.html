@@ -12,7 +12,12 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-
+<!--Cookie Div -->
+<div id="cookieDiv" style="background-color: rgba(0, 0, 0, 0.15); position: static;">
+	<div style="padding:10px 0px 5px 15px;" >
+		<p>Diese Seite verwendet Cookies. Indem Sie diese Website weiterhin nutzt, erklären Sie sich mit der Verwendung von Cookies einverstanden. Weitere Informationen erhalten Sie in der Datenschutzerkläung. <a href="#" onclick="document.getElementById('cookieDiv').style.display = 'none'"> &times; Verstanden</a></p>		
+	</div>
+</div>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
@@ -31,7 +36,6 @@
 		</div>
 	</div>
 </nav>
-
 <!--- Image Slider -->
 <div class="carousel slide" id="slides" data-ride="carousel">
 	<ul class="carousel-indicators">
